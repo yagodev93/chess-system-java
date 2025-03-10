@@ -17,6 +17,10 @@ public abstract class ChessPiece extends Piece {
 		return this.color;
 	}
 	
+	public ChessPosition getChessPosition() {
+		return ChessPosition.fromPosition(position);
+	}
+	
 	/*Verifica se o local a qual a peça ira se movimentar possui uma peça
 	 * e se essa peça é uma peça adversaria.
 	 */
